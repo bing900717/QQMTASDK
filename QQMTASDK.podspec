@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'QQMTASDK'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of QQMTASDK.'
+  s.summary          = 'iOS MTASDK for CocoaPods'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,9 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  Add MTASDK to CocoaPods.
+  No idfa.
+  MTA release number is v2.0.5.
                        DESC
 
   s.homepage         = 'https://github.com/bing900717/QQMTASDK'
@@ -29,9 +31,11 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'QQMTASDK/Classes/**/*'
-  
+  s.source_files = 'QQMTASDK/Classes/*.{h,m}'
+  s.frameworks = 'QuartzCore','Security','CFNetwork','SystemConfiguration','CoreTelephony','UIKit','Foundation','CoreGraphics'
+  s.vendored_library = 'QQMTASDK/libmtasdk.a'
+  s.libraries = 'sqlite3','z'
+  s.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }  
   # s.resource_bundles = {
   #   'QQMTASDK' => ['QQMTASDK/Assets/*.png']
   # }

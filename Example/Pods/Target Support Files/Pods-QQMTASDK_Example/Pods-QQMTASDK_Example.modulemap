@@ -1,0 +1,6 @@
+framework module Pods_QQMTASDK_Example {
+  umbrella header "Pods-QQMTASDK_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,1 @@
+../../../../../QQMTASDK/Classes/MTACrashReporter.h

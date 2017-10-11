@@ -1,0 +1,6 @@
+framework module QQMTASDK {
+  umbrella header "QQMTASDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
