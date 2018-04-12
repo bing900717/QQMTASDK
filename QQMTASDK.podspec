@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QQMTASDK'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'iOS MTASDK for CocoaPods'
 
 # This description is used to generate tags and improve search results.
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
   Add MTASDK to CocoaPods.
   No idfa.
-  MTA release number is v2.0.5.
+  MTA release number is v2.2.1.
                        DESC
 
   s.homepage         = 'https://github.com/bing900717/QQMTASDK'

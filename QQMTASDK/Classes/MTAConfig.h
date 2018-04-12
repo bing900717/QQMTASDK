@@ -84,9 +84,22 @@ typedef enum {
 
 
 /**
- 是否自动统计使用时长，默认打开
+ 是否自动统计整个APP的使用时长，默认打开
  */
 @property BOOL autoTM;
+
+/**
+ 若打开此项，MTA会在ViewController的
+ viewDidAppear和viewWillDisappear
+ 方法中，自动统计页面时长。
+ 默认打开
+
+ 注：若您自行实现了ViewController中
+ 的viewDidAppear和viewWillDisappear
+ 这两个方法。请在这两个方法中分别调用父类
+ 的对应方法。否则此功能可能无法正常工作。
+ */
+@property BOOL autoTrackPage;
 
 /**
  应用的统计AppKey
@@ -136,12 +149,6 @@ typedef enum {
  默认打开
  */
 @property BOOL smartReporting;
-
-/**
- 是否启动MTA的崩溃报告功能
- 默认为YES
- */
-@property BOOL autoExceptionCaught;
 
 /**
  最大上报的单条event长度，超过不上报
