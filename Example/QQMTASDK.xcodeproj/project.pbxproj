@@ -207,8 +207,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				9C3922A5F2E76C824F7B53C8 /* [CP] Embed Pods Frameworks */,
-				1D395F4061CBD434C4EBE1CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,7 +226,6 @@
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
 				65646A34F0F8F9D1FEFC0AF2 /* [CP] Embed Pods Frameworks */,
-				BAB8E2EFDA69C3D2FF3A0621 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,21 +294,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1D395F4061CBD434C4EBE1CC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QQMTASDK_Example/Pods-QQMTASDK_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2DC510F18DCAABAC9D8AAF88 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,39 +352,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QQMTASDK_Tests/Pods-QQMTASDK_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9C3922A5F2E76C824F7B53C8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-QQMTASDK_Example/Pods-QQMTASDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/QQMTASDK/QQMTASDK.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QQMTASDK.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QQMTASDK_Example/Pods-QQMTASDK_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BAB8E2EFDA69C3D2FF3A0621 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QQMTASDK_Tests/Pods-QQMTASDK_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
